@@ -1,0 +1,31 @@
+body{
+	font-size: 20px;
+}
+
+.container{
+	margin-bottom: 5%;
+}
+h1{
+	text-align: center;
+
+}
+.card-header{
+	text-align: center;
+	background-color: white;
+}
+.card{
+	margin-top: 5%;
+	text-align: left;
+	background-color: #e7e6e6;
+	text-indent: .5%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+/*.form-control{
+	background-color: #e7e6e6;
+}*/

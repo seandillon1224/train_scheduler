@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <body background="./tree_bark.png">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+      <script src="https://momentjs.com/downloads/moment.js"></script>
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <title>New York Times</title>
+      </head>
+      <body>
+         <div class="jumbotron jumbotron-fluid jumbothang">
+            <!-- <div class="container"> -->
+            <h1 class="display-3">Choo Choo! </h1>
+            <!-- </div> -->
+         </div>
+         <div class = "container">
+         <div class="card">
+            <div class="card-header">
+               Current Train Schedule
+            </div>
+            <div class="card-body">
+               <table class="table traintable">
+               <thead>
+                  <tr>
+                     <th scope="col">Train Name</th>
+                     <th scope="col">Destination</th>
+                     <th scope="col">Frequency (min)</th>
+                     <th scope="col">Next Arrival</th>
+                     <th scope="col">Minutes Away</th>
+                  </tr>
+               </thead>
+               <tbody>
+               </tbody>
+            </table>
+               <br>
+            </div>
+
+            <div class = "form">
+               <div class="card">
+                  <div class="card-header">
+                     Add Train
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Train Name</label>
+                     <input type="search" class="form-control" id="trainName" aria-describedby="emailHelp" placeholder="What's this train called?">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleFormControlSelect1">Destination</label>
+                     <input type="search" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Where we headed?">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">First Train Time(HH:mm - Military Time) </label>
+                     <input type="search" class="form-control" id="firstTrain" aria-describedby="emailHelp" placeholder="When's the first train?">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Frequency (Min)</label>
+                     <input type="search" class="form-control" id="frequency" aria-describedby="emailHelp" placeholder="How often?">
+                  </div>
+               </div>
+               <br>
+               <button type="submit" class="btn btn-primary submittal">Search</button>
+               <button type="submit" class="btn btn-primary">Clear Results</button>
+               </form>
+            </div>
+         </div>
+         <br>
+         <div class="footer">
+            <p>Train Schedule LLC</p>
+         </div>
+         <script type=text/javascript src=./javascript.js></script>
+   </body>
+</html>
